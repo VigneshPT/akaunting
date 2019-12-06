@@ -21,11 +21,17 @@
                        required="required"
                        name="items[][name]"
                        v-model="row.name"
+                       @focus="onGetItem($event, index)"
                        @input="onGetItem($event, index)"
                        type="text"
                        autocomplete="off">
                 <div class="dropdown-menu item-show dropdown-menu-center" ref="menu" :class="[{show: row.show}]">
-                    <div class="list-group list-group-flush">
+                    <div class="custom-item-container">
+                        <div class="custom-item" v-for="(item, item_index) in items" @click="onSelectItem(item, index)">
+                            <div class="name" v-text="item.name"></div>
+                        </div>
+                    </div>
+                    <!-- <div class="list-group list-group-flush">
                         <a class="list-group-item list-group-item-action" v-for="(item, item_index) in items" @click="onSelectItem(item, index)">
                             <div class="row align-items-center">
                                 <div class="col ml--2">
@@ -37,7 +43,7 @@
                                 </div>
                             </div>
                         </a>
-                    </div>
+                    </div> -->
                 </div>
                 <input name="items[][show]"
                        value="false"

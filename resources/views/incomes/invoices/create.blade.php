@@ -158,7 +158,7 @@
                         </div>
                     </div>
 
-                    {{ Form::textareaGroup('notes', trans_choice('general.notes', 2), '', setting('invoice.notes')) }}
+                    {{ Form::textareaGroup('notes', trans_choice('general.notes_with_vnumber', 1), '', setting('invoice.notes')) }}
 
                     {{ Form::textareaGroup('footer', trans('general.footer'), '', setting('invoice.footer')) }}
 

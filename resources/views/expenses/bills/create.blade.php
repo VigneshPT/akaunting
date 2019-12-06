@@ -158,7 +158,7 @@
                         </div>
                     </div>
 
-                    {{ Form::textareaGroup('notes', trans_choice('general.notes', 2)) }}
+                    {{ Form::textareaGroup('notes', trans_choice('general.notes_with_vnumber', 1)) }}
 
                     {{ Form::selectAddNewGroup('category_id', trans_choice('general.categories', 1), 'folder', $categories, setting('default.category'), []) }}
 

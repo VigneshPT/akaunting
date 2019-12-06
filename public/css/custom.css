@@ -736,6 +736,31 @@
 }
 /*--------Add Item Show Finish--------*/
 
+/*--------Add Item Show Custom Container--------*/
+.item-show {
+    min-width: 760px !important;
+}
+.custom-item-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    grid-gap: 10px;
+    padding: 0 10px;
+}
+
+.custom-item {
+    cursor: pointer;
+    background-color: #fff;
+    border-radius: 3px;
+    padding: 20px;
+    font-size: 14px;
+    border: 1px solid #e9ecef;
+}
+
+.custom-item:hover {
+    background-color: #55588b;
+    color: #ffff;
+}
+/*--------Add Item Show Custom Container Finish--------*/
 
 /*--------Height 0--------*/
 .h-0
