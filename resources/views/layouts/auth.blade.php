@@ -46,7 +46,7 @@
 
                 @yield('forgotten-password')
 
-                <footer>
+                <!-- <footer>
                     <div class="container">
                         <div class="row align-items-center justify-content-xl-between">
                             <div class="col-xl-12">
@@ -58,7 +58,7 @@
                             </div>
                         </div>
                     </div>
-                </footer>
+                </footer> -->
 
             </div>
 
